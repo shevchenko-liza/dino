@@ -1,0 +1,54 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/png-transparent-tyrannosaurus-dino-t-rex-t-rex-chrome-vr-jump-trex-runner-lava-jump-dinosaur-angle-text-monochrome-thumbnail.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 145px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(./img/png-transparent-game-off-game-jam-gamedev-net-video-game-cactus-game-angle-text-thumbnail.jpg);
+    background-size: 20px 40px;
+    position: relative;
+    top: 100px;
+    left: 540px;
+    animation: cactusMov 1s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 540px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jupm {
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150x;
+    }
+    30% {
+        top: 130px;
+    }
+    80% {
+        top: 80px;
+    }
+    100% {
+        top: 150px;
+    }
+}
